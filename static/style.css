@@ -1,0 +1,93 @@
+body {
+    font-family: "Calibri", sans-serif; /* Cambia la fuente a Calibri */
+    background-color: #2600ff; /* Fondo de color azul eléctrico */
+    color: #fff;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding-top: 80px; /* Agrega espacio en la parte superior para la barra de menú */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center; /* Centra el texto en el encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Coloca el encabezado en la parte superior de la página */
+    width: 100%; /* Extiende el encabezado al ancho de la pantalla */
+    z-index: 1000; /* Asegura que el encabezado esté en el frente de otros elementos */
+    padding: 10px 0; /* Añade espacio arriba y abajo */
+}
+
+nav {
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos en el encabezado */
+    justify-content: space-between; /* Espacia los elementos en el menú */
+    max-width: 100%;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos en la barra de menú */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Ajusta el margen derecho de "Inicio" para reducir el espacio */
+nav ul li:first-child {
+    margin-right: 10px; /* Reduce el espacio entre la imagen y el menú */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 18px; /* Tamaño de fuente más grande */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+}
+
+/* Establece el mismo ancho y alto para la imagen y el banner */
+nav img {
+    width: 220px; /* Ancho de la imagen */
+    height: auto; /* Alto de la imagen */
+    margin-right: 10px; /* Reduce el espacio entre la imagen y el menú */
+}
+
+/* Ancho máximo del banner */
+nav ul {
+    max-width: calc(100% - 150px); /* Ancho máximo del banner */
+}
+
+hr {
+    border: none; /* Elimina el borde de la línea divisoria */
+    border-top: 60px solid #fff; /* Establece un borde superior de 1 píxel y color blanco */
+    width: 2px; /* Ancho de la línea divisoria */
+    height: 20px; /* Altura de la línea divisoria */
+    margin: 0 10px; /* Espaciado izquierdo y derecho de la línea divisoria */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Agrega más estilos según tus preferencias */

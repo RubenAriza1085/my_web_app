@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Incluir Font Awesome (Puedes descargarlo o usar la versión en línea) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <!-- Encabezado (barra de menú) -->
+    <header>
+        <nav>
+            <!-- Insertar una imagen al comienzo de la barra de menú -->
+            <img src="static/Logo 2.png" alt="Logo de la empresa">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="#">Servicio 1</a>
+                        <a href="#">Servicio 2</a>
+                        <a href="#">Servicio 3</a>
+                    </div>
+                </li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Trabaja con Nosotros</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <hr> <!-- Línea divisoria -->
+                <li class="dropdown">
+                    <a href="#">Portal de Trabajadores <i class="fas fa-user"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Módulo de Inicio de Sesión</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenido de la página aquí -->
+    </main>
+</body>
+</html>
